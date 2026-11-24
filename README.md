@@ -9,12 +9,15 @@ Este repositório é o Desafio de Projeto que fecha o Bootcamp [Neo4j Certified 
 
 ## Como Foi a Jornada (opcional)
 
-Em poucas linhas, conte como você se preparou, qual tema da prova deu mais trabalho e o que vem a seguir.
+A base de conhecimento veio do Bootcamp da DIO, complementada com a documentação oficial da Neo4j e a GraphAcademy. A prova tem 80 questões e cobre, entre outros temas:
 
-## Como Entregar
+- Modelagem de grafos (nós, relacionamentos, labels e propriedades)
+- Cypher 5: padrões, quantified path patterns, modos de match, subqueries e `MERGE`
+- Importação de dados com `LOAD CSV` em lotes (`IN TRANSACTIONS`)
+- Índices e constraints (range, text, full-text e vector)
+- Driver oficial: Bolt, `execute_query`, transações e conexões seguras
 
-1. Faça a prova na [página da certificação](https://graphacademy.neo4j.com/certifications/neo4j-certification). Ela é gratuita e, se você não passar, pode tentar de novo depois de 24 horas. Se preferir, escolha outra entre as [certificações da GraphAcademy](https://graphacademy.neo4j.com/certifications);
-2. Com a aprovação, o certificado sai na hora. Abra a página dele e copie o endereço, que começa com `https://graphacademy.neo4j.com/c/`;
-3. Faça um fork deste repositório, ou crie um repositório público na sua conta e copie este README;
-4. Na seção **Minha Certificação**, troque `Seu Nome` pelo seu nome e o link de exemplo pelo seu;
-5. Envie o link do seu repositório na plataforma da DIO.
+Os temas que mais exigiram estudo foram **
+- Quantified path patterns e modos de match. "Variáveis de grupo viram listas, e entender REPEATABLE ELEMENTS vs DIFFERENT RELATIONSHIPS mudou como eu leio qualquer MATCH."
+- Escopo em subqueries. "A sintaxe CALL (x) { } e a diferença entre importar variáveis e recalcular por linha."
+- Importação em lote. "LOAD CSV lê tudo como string, então tipagem e IN TRANSACTIONS pesam na performance e na consistência."**. Daqui para frente, pretendo **Modelar a rastreabilidade da cadeia do couro (fazenda → frigorífico → curtume → lote) como grafo para conformidade EUDR, ligando produtores, lotes e geolocalização, e fazer deploy no Aura (AWS).**.
